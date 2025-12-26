@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Player UI</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#000;
+    color:#fff;
+    display:flex;
+    height:100vh;
+}
+
+/* LEFT PLAYLIST */
+.playlist{
+    width:35%;
+    background:#111;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+.playlist h2{
+    margin-bottom:15px;
+}
+
+.song{
+    padding:10px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.song:hover{
+    background:#222;
+}
+
+.song p{
+    margin:0;
+    font-size:14px;
+}
+
+.song span{
+    font-size:12px;
+    color:#aaa;
+}
+
+/* RIGHT PLAYER */
+.player{
+    width:65%;
+    background:#0b0b0b;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+/* COVER */
+.cover{
+    width:260px;
+    height:260px;
+    background:#222;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+/* DETAILS */
+.details{
+    text-align:center;
+}
+
+.details h3{
+    margin:0;
+}
+
+.details p{
+    margin:5px 0;
+    font-size:14px;
+    color:#aaa;
+}
+
+/* TIMELINE */
+.timeline{
+    width:60%;
+    height:5px;
+    background:#333;
+    border-radius:5px;
+    margin:20px 0;
+}
+
+/* CONTROLS */
+.controls{
+    display:flex;
+    gap:30px;
+}
+
+.controls button{
+    background:none;
+    border:none;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.play{
+    background:white;
+    color:black;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    font-size:24px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PLAYLIST -->
+<div class="playlist">
+    <h2>My Playlist</h2>
+
+    <div class="song">
+        <p>Adithya Varma Theme</p>
+        <span>Adithya Varma • Radhan</span>
+    </div>
+
+    <div class="song">
+        <p>Porkanda Singam</p>
+        <span>Vikram • Anirudh</span>
+    </div>
+
+    <div class="song">
+        <p>Kurchi Madathapetti</p>
+        <span>Guntur Karam • Thaman S</span>
+    </div>
+
+    <div class="song">
+        <p>Hukum</p>
+        <span>Jailer • Anirudh</span>
+    </div>
+
+    <div class="song">
+        <p>Vaadi Pulla Vaadi</p>
+        <span>Meesaya Murukku • Hiphop Tamizha</span>
+    </div>
+</div>
+
+<!-- PLAYER -->
+<div class="player">
+
+    <div class="cover"></div>
+
+    <div class="details">
+        <h3>Kurchi Madathapetti</h3>
+        <p>Guntur Karam • Thaman S</p>
+    </div>
+
+    <div class="timeline"></div>
+
+    <div class="controls">
+        <button>⏮</button>
+        <button class="play">▶</button>
+        <button>⏭</button>
+    </div>
+
+</div>
+
+</body>
+</html>
